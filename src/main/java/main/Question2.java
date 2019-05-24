@@ -10,8 +10,9 @@ public class Question2 {
 public static void main(String[] args) {
 	List<Integer> numbers = new ArrayList<Integer>();
 	Scanner sc = new Scanner(System.in);
-	System.out.println("Enter the values: ");
+	System.out.println("Enter the length: ");
 	int Length = sc.nextInt();
+	System.out.println("Enter the values: ");
 	sc.nextLine();
 	for(int i=0;i<Length;i++)
 		numbers.add(Integer.parseInt(sc.nextLine()));
@@ -20,8 +21,9 @@ public static void main(String[] args) {
 
 }
 public List<Integer> listWithDuplicates(List<Integer> number){
-	List <Integer> L1 = null;
+	List <Integer> L1 = new ArrayList<Integer>();
+	L1.addAll(number);
 	//write your code here !! change the L1 to required value
-	return L1 ;
+	return L1;
 }
 }
